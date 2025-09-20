@@ -6,7 +6,6 @@ Reference: https://huggingface.co/datasets/bird-of-paradise/transformer-from-scr
 """
 
 import math
-from xml.parsers.expat import model
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
