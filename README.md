@@ -10,6 +10,26 @@ This repository is dedicated to building and understanding Large Language Models
 *   **Training and Inference Scripts:** Comes with scripts to train your own models and to use them for predictions.
 *   **Minimal Dependencies:** The project has minimal dependencies, making it easy to set up and run.
 
+## Architecture Overview
+```
+Transformer
+├── Encoder (Stack of 6 EncoderBlocks)
+│   ├── Multi-Head Self-Attention
+│   ├── Feed-Forward Network  
+│   ├── Residual Connections
+│   └── Layer Normalization
+│
+├── Decoder (Stack of 6 DecoderBlocks)  
+│   ├── Masked Multi-Head Self-Attention
+│   ├── Multi-Head Cross-Attention
+│   ├── Feed-Forward Network
+│   ├── Residual Connections
+│   └── Layer Normalization
+│
+├── Input Embedding + Positional Encoding
+└── Output Linear Layer
+```
+
 ## Project Structure
 
 The repository is organized as follows:
