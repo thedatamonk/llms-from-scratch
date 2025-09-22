@@ -87,7 +87,10 @@ llms-from-scratch/
     ```bash
     pip install -r requirements.txt
     ```
-
+4.  **Install this repo as a package**
+    ```bash
+    pip install -e .
+    ```
 ## Usage
 
 ### Training
