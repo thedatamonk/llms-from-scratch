@@ -76,3 +76,7 @@ class Vocabulary:
                 for s in tokenized_sentences
             ]
         return tokenized_sentences
+    
+
+    def __len__(self):
+        return len(self.token2index)
